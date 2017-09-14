@@ -58,6 +58,8 @@ php:
     - "mysql:mysql"
   volumes:
     - .:/var/www/html
+    #change the info on the left side of the colon to your magento repository
+    - ~/code/whha:/var/www/html/web
 mysql:
   image: mysql:5.5
   ports:
